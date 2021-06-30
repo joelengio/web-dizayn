@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+html,body{
+	
+}
+
+#home{
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+	background: url("../bgm.png");
+}
+#logos img{
+	height: 300px;
+	padding: 50px 100px;
+}
+.right{
+	float: right;
+
+}
+
+h1{
+	color: white;
+	font-size: 72px;
+	font-family: 'Sen', san-serif;
+	text-align: center;
+	padding-top: 50px;
+}
+#btn{
+	text-align: center;
+
+}
+.btn{
+    text-decoration: none;
+    font-family: 'Ribeye Marrow', cursive;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px;
+    background: url(../bgm.png);
+    background-position: center;
+}
+.btn:focus,
+.btn:hover {
+    color: red;
+}
+/*========================
+	GAME
+==========================*/
+
+p{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	padding-top: 20px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.game{
+	width: 1080px;
+	height: 450px;
+	margin: auto;
+	margin-top: 30px;	
+	border: 3px solid #FFFFFF;
+}
+
+#finn{
+	height: 150px;
+	width: 150px ;
+	background-image: url("../finn/1.png");
+	background-size: 150px 150px;
+	position: relative;
+	top: 300px;
+	
+}
+
+
+
+.jump{
+	animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+	0%{
+		top: 150px;
+	}
+	25%{
+		top: 120px;
+	}
+	50%{
+		top: 80px;
+	}
+	75%{
+		top: 120px;
+	}
+	100%{
+		top: 150px;
+	}
+}
+
+#obstacle{
+	height: 50px;
+	width: 50px;
+	background-image: url("../obs/corona .png");
+	background-size: 50px 50px;
+	position: relative;
+	top: 250px;
+	left: 1030px;
+	animation: obs 3s infinite linear;
+}
+
+@keyframes obs{
+	0%{
+		left: 1030px;
+	}
+	100%{
+		left: 0px;
+	}
+}
