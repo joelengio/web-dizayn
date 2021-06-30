@@ -10,7 +10,7 @@ html,body{
 	background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 100vh;
+    height:1045px;
     width: 100%;
     position: absolute;
 	background: url("../bgm.png");
